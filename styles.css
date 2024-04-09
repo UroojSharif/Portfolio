@@ -10,42 +10,51 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 :root {
   --font-color: #ffffff;
-  --para-color: grey;
+  --para-color: rgb(172, 167, 167);
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   background-color: rgb(188, 149, 106);
   padding: 5px;
 }
 
 /* hero-section */
 
- #home {
-  background-color: #292929;
+#home {
+  margin-top: 66px;
+  background-image: url(./images/me.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 40vh;
 }
 
-.intro {
+#home h1 {
+  padding-top: 7%;
+  padding-left: 5%;
   color: var(--font-color);
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 4rem;
 }
 
-.hero-img img {
-  width: 224px;
-  height: 200px;
+#home p {
+  color: var(--font-color);
+  font-size: 3rem;
+  padding-left: 5%;
 }
 
-#about{
-  height: 80vh;
+#about {
   background-color: #292929;
   overflow: hidden;
 }
 
- .line {
+.line {
   color: rgb(188, 149, 106);
   padding: 0 100px;
   padding-top: 12%;
@@ -60,23 +69,23 @@ body {
   top: 75%;
   left: 5%;
   width: 50px;
-  height: 2px; 
-  background-color: rgb(188, 149, 106); 
+  height: 2px;
+  background-color: rgb(188, 149, 106);
   transform: translateY(-50%);
-} 
+}
 
 .sub-heading {
   color: var(--font-color);
-  font-size: 26px;
-  padding: 0 20px;
+  font-size: 2.6rem;
+  padding: 0 50px;
   font-weight: 700;
 }
 
 #about p {
   color: var(--para-color);
-  font-size: 20px;
-  padding: 0 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  padding: 0 5rem;
+  line-height: 3rem;
   font-weight: 500;
 }
 
@@ -102,14 +111,31 @@ body {
   outline: none;
   border: none;
   text-decoration: none;
-  overflow: hidden;
   border: 1px solid #242424;
   margin-top: 3%;
-  
+  width: 50%;
 }
 
 .button:hover {
   background-color: rgb(188, 149, 106);
+}
+
+#skills {
+  padding: 0 5rem;
+  margin-top: 2rem;
+}
+
+#skills h3 {
+  color: var(--font-color);
+  margin-bottom: 4%;
+  font-size: 2.6rem;
+}
+
+#skills li {
+  color: var(--para-color);
+  font-size: 2rem;
+  list-style: none;
+  line-height: 3rem;
 }
 
 #portfolio {
@@ -122,98 +148,134 @@ body {
 }
 
 #projects {
-    background-color: #292929;
-    padding-bottom: 100px;
-  }
+  background-color: #292929;
+  padding-bottom: 100px;
+}
 
 .project img {
   max-width: 100%;
-  height: 300px;
-  margin-left: 5%;
 }
 
-#projects .sub-heading{
-    margin-bottom: 40px;
+#projects .sub-heading {
+  margin-bottom: 40px;
 }
 
-.project{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.project p{
-    font-size: 20px;
-    color: var(--font-color);
+.project p {
+  font-size: 20px;
+  color: var(--font-color);
 }
 
-#contact{
-  height: 100vh;
+#contact {
   background-color: #292929;
 }
 
-.container{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 5%;
+  margin-bottom: 0;
+  padding-bottom: 5%;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 5%;
-  
-} 
-
-label{
+label {
   color: var(--font-color);
   font-size: 16px;
   padding: 5px;
 }
 
-input{
+input {
   height: 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
-textarea{
+textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-#skills h3{
-  color: var(--font-color);
-  margin: 10% 2%;
-  border-bottom: 1px solid var(--para-color);
-}
-
-#skills li{
-color: var(--para-color);
-font-size: 16px;
-list-style: none;
-}
-
- footer{
+footer {
   display: flex;
   justify-content: space-between;
   background-color: #212529;
   padding: 10px;
   font-size: 20px;
- }
+}
 
- footer i{
+footer i {
   padding-left: 10px;
- }
+}
 
- footer p{
+footer p {
   padding: 5px;
   font-size: 12px;
   color: var(--font-color);
- }
- footer img{
+}
+footer img {
   color: red;
- }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+  #portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  #home {
+    min-height: 60vh;
+  }
+  .line {
+    color: rgb(188, 149, 106);
+    padding-top: 12%;
+    padding-bottom: 3%;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+  }
+
+  .line::before {
+    top: 77%;
+    left: 42%;
+    width: 50px;
+  }
+
+  .line::after {
+    content: "";
+    position: absolute;
+    top: 77%;
+    left: 55%;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(188, 149, 106);
+    transform: translateY(-50%);
+  }
+
+  #about {
+    display: flex;
+  }
+
+  #skills {
+    margin-top: 9%;
+    margin-left: 10%;
+  }
+
+  .intro {
+    width: 50%;
+  }
+
+  #portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

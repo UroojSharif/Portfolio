@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar ps-3 navbar-expand-lg sticky-top bg-dark">
-        <a class="navbar-brand text-secondary" href="#">
+      <nav class="navbar ps-3 navbar-expand-lg fixed-top bg-dark">
+        <a class="navbar-brand text-secondary ms-5" href="#">
           <img
             src="./images/U-Letter-PNG-Image.png"
             width="50"
@@ -30,18 +30,18 @@
           aria-label="Toggle navigation"
           data-bs-theme="dark"
         >
-          <span class="navbar-toggler-icon fs-1"></span>
+          <span class="navbar-toggler-icon fs-1 me-5"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav d-flex justify-content-end container">
-            <li class="nav-item">
+          <ul class="navbar-nav d-flex justify-content-around container">
+            <li class="nav-item ">
                 <a class="nav-link text-secondary fs-3 fw-bold text-light" href="#home">Home</a>
               </li>
             <li class="nav-item">
               <a class="nav-link text-secondary fs-3 fw-bold text-light" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary fs-3 fw-bold text-light" href="#projects">Projects</a>
+              <a class="nav-link text-secondary fs-3 fw-bold text-light " href="#projects">Projects</a>
             </li>
             <li class="nav-item float-right">
               <a class="nav-link text-secondary fs-3 fw-bold text-light" href="#contact"> Contact</a>
@@ -52,20 +52,29 @@
     </header>
     <main>
         <section id="home">
-            <div class="hero text-light container-fluid py-5" id="banner">
-                <div class=" pt-5 pb-4 m-5">
-                  <p  class="fs-1 fw-bold text-white">Urooj Sharif</p>
-                  <p class="mb-3 text-white fs-1"> Web Development Student</p>
-                </div>
-              </div>
+              
+                  <h1>Urooj Sharif</h1>
+                  <p> Web Development Student</p>
+                  <p>I like making fun, interactive things with code. <br> I also talk & write about those things.</p>
         </section>
 
         <section id="about">
+            <div class="intro">
             <h2 class="line">About</h2>
             <h3 class="sub-heading">Hi, I'm Urooj!</h3>
             <p>As a seasoned developer transitioning from a background in chemical engineering, I bring a unique blend of analytical thinking and creative problem-solving to the world of software development. With a strong foundation in engineering principles and a passion for technology, I thrive on tackling complex challenges and crafting innovative solutions. My journey from chemical engineering to software development reflects my dedication to continuous learning and adapting to new environments. I am committed to leveraging my diverse skill set and experiences to drive impactful projects and contribute to the ever-evolving tech landscape.
             </p> 
             <a class="button" href="mailto:hello@hotmail.com" target="_blank">Get in Touch</a>
+          </div>
+            <div id="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>HTML <i class="fa-brands fa-html5" style="color: #d3a136;"></i></li>
+                <li>CSS <i class="fa-brands fa-css3-alt" style="color: #d3a136;"></i></li>
+                <li>Bootstrap <i class="fa-brands fa-bootstrap" style="color: #d3a136;"></i></li>
+                <li>Sass <i class="fa-brands fa-sass" style="color: #d3a136;"></i></li>
+              </ul>
+            </div>
         </section>
 
         <section id="projects">
@@ -73,7 +82,7 @@
             <h3 class="sub-heading">I create beautiful designs for digital experiences</h3>
            <div id="portfolio">
             <div class="project">
-                <a href="./flowershop/index.html"><img src="./images/flower.jpg" alt="flower-pic"></a>
+                <a href="https://uroojsharif.github.io/Petal-and-Bloom/"><img src="./images/flower.jpg" alt="flower-pic"></a>
                 <p>Petals and Bloom</p>
             </div>
 
@@ -88,7 +97,7 @@
             </div>
 
             <div class="project">
-                <a href="https://uroojsharif.github.io/tribute.page/"><img src="./images/iqbal .jpg" alt="tribute-image"></a>
+                <a href="https://uroojsharif.github.io/tribute.page/"><img src="./images/iqbal.jpg" alt="tribute-image"></a>
                 <p>Tribute page</p>
             </div>
            </div>
@@ -97,7 +106,6 @@
         <section id="contact">
           <h2 class="line">Get In Touch</h2>
             <h3 class="sub-heading">Drop me a line to say hello or talk about opportunities</h3>
-            <div class="container">
              
               <form>
                 <label for="name">Name</label>
@@ -109,17 +117,6 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 <button class="button">Submit Message</button></form>
-
-                <div id="skills">
-                  <h3>Skills</h3>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Saas</li>
-                  </ul>
-                </div>
-            </div>
         </section>
     </main>
     <footer>
