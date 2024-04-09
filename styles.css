@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +32,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  opacity: 0.7;
   min-height: 40vh;
 }
 
@@ -39,14 +40,20 @@ body {
   padding-top: 7%;
   padding-left: 5%;
   color: var(--font-color);
-  font-weight: 800;
-  font-size: 4rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
 }
 
 #home p {
   color: var(--font-color);
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 5%;
+  font-weight: bold;
+}
+
+#home p:nth-child(2) {
+  font-size: 3rem;
 }
 
 #about {
@@ -100,7 +107,7 @@ body {
   display: inline-block;
   border-radius: 100px;
   padding: 20px 60px;
-  font-size: 12px;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.125em;
   text-transform: uppercase;
@@ -128,14 +135,14 @@ body {
 #skills h3 {
   color: var(--font-color);
   margin-bottom: 4%;
-  font-size: 2.6rem;
+  font-size: 3.5rem;
 }
 
 #skills li {
   color: var(--para-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   list-style: none;
-  line-height: 3rem;
+  line-height: 3.5rem;
 }
 
 #portfolio {
@@ -154,10 +161,15 @@ body {
 
 .project img {
   max-width: 100%;
+  box-shadow: rgba(223, 165, 29, 0.25) 0px 54px 55px, rgba(223, 165, 29, 0.25) 0px -12px 30px, rgba(223, 165, 29, 0.25) 0px 4px 6px, rgba(223, 165, 29, 0.25) 0px 12px 13px, rgba(223, 165, 29, 0.25) 0px -3px 5px;
+  border: 3px solid rgb(188, 149, 106);
 }
 
+.project a img:hover{
+  opacity: 0.4;
+}
 #projects .sub-heading {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .project {
@@ -168,7 +180,7 @@ body {
 }
 
 .project p {
-  font-size: 20px;
+  font-size: 2.5rem;
   color: var(--font-color);
 }
 
@@ -187,20 +199,30 @@ form {
 
 label {
   color: var(--font-color);
-  font-size: 16px;
+  font-size: 2.5rem;
   padding: 5px;
 }
 
 input {
-  height: 30px;
+  height: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
 }
 
+input:focus{
+  border: 1px solid rgb(188, 149, 106);
+  outline: none;
+}
+
 textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea:focus{
+  border: 1px solid rgb(188, 149, 106);
+  outline: none;
 }
 
 footer {
@@ -246,7 +268,7 @@ footer img {
 
   .line::before {
     top: 77%;
-    left: 42%;
+    left: 35%;
     width: 50px;
   }
 
@@ -254,7 +276,7 @@ footer img {
     content: "";
     position: absolute;
     top: 77%;
-    left: 55%;
+    left: 60%;
     width: 50px;
     height: 2px;
     background-color: rgb(188, 149, 106);
@@ -278,4 +300,6 @@ footer img {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+ 
 }
