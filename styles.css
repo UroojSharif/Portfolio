@@ -202,13 +202,17 @@ body {
   opacity: 1;
 }
 
-.content p {
-  padding: 8rem;
-}
+
 
 .project p {
   font-size: 2.5rem;
   color: var(--font-color);
+}
+
+.content p {
+  padding: 8rem 4rem;
+  font-size: 2rem;
+ 
 }
 
 #contact {
@@ -278,6 +282,10 @@ footer img {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .content p{
+    padding: 8rem;
+  }
 }
 
 @media screen and (min-width: 998px) {
@@ -326,5 +334,9 @@ footer img {
   #portfolio {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .content p{
+    padding: 12rem 5rem;
+   
   }
 }
