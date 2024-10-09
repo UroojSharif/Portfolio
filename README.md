@@ -12,4 +12,4 @@ Welcome to my **Portfolio Project**, a showcase of my skills and creativity as a
 This project not only demonstrates my technical skills in HTML and CSS but also reflects my design sensibilities and attention to detail.
 
 ## 📬 If You Want to Contact
-Feel free to reach out if you have any questions, suggestions, or collaboration opportunities! You can connect with me on [LinkedIn](https://www.linkedin.com/in/urooj-sharif-367686130/) or email me at [your-email@example.com](mailto:your-email@example.com).
+Feel free to reach out if you have any questions, suggestions, or collaboration opportunities! You can connect with me on [LinkedIn](https://www.linkedin.com/in/urooj-sharif-367686130/) or email me at [urooj.shareef@hotmail.com](mailto:your-email@example.com).
